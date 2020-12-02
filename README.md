@@ -3,7 +3,7 @@ install gTTS- pip install gTTS
 
 As of right now, this program is only meant for english to japanese sets, but will be expanded in the future.
 
-Go to your quizlet set and under options>export>copy>copy text
+Go to your quizlet set and under options>export>copy text
 
 paste text into txt variable
 
