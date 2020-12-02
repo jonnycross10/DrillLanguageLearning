@@ -1,5 +1,7 @@
 import requests
-import cloudscraper
+from gtts import gTTS
+import os
+
 txt = '''flower	お花
 waterfall	滝
 car	車'''
@@ -12,10 +14,11 @@ for i in newText:
   keyVal = i.split("\t")
   d[keyVal[0]] = keyVal[1]
 
-#print(d)
+print(d)
 
-url = "https://quizlet.com/551833561/edit"
 
-scraper = cloudscraper.create_scraper()
+language = 'ja'
 
-print(scraper.get(url).text)
+myObj = gTTS(text = txt, lang = language, slow=False)
+
+myObj.save("txt.mp3")
