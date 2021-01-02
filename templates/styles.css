@@ -1,0 +1,11 @@
+body {
+	font-family: verdana;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+input[type=submit]{
+	color: red;
+	border-radius: 5px;
+}
